@@ -7,7 +7,7 @@ CREATE TABLE `teams` (
 	`team_id` int(8) unsigned NOT NULL AUTO_INCREMENT,
 	`team_name` varchar(70) NOT NULL
 	PRIMARY KEY (`team_id`)
-) ENGINE=InnoDB;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT;
 
 
 -- ----------------------------
@@ -24,7 +24,7 @@ CREATE TABLE `fixtures_results` (
 	`team_a_score` smallint, 
 	`team_b_score` smallint,
 	PRIMARY KEY (`fixture_id`)
-) ENGINE=InnoDB;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT;
 
 
 -- ----------------------------
@@ -43,7 +43,7 @@ CREATE TABLE `league_table` (
 	`for` smallint NOT NULL, 
 	`against` smallint NOT NULL, 
 	`diff` smallint NOT NULL,  
-) ENGINE=InnoDB;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT;
 
 
 -- ----------------------------
@@ -56,4 +56,4 @@ CREATE TABLE `weather` (
 	`datetime` datetime,
 	`temp_cel` DOUBLE,
 	`weather` varchar(120),
-) ENGINE=InnoDB;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT;
