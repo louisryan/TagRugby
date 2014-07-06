@@ -16,7 +16,7 @@ CREATE TABLE `teams` (
 DROP TABLE IF EXISTS `fixtures_results`;
 CREATE TABLE `fixtures_results` (
 	--`fixture_id` int unsigned NOT NULL AUTO_INCREMENT,
-	`phase` varchar(10), 
+	`phase` varchar(20), 
 	`group` int(5),
 	`datetime` datetime NOT NULL,
 	`team_a` varchar(50) NOT NULL,
