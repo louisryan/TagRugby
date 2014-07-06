@@ -15,12 +15,12 @@ CREATE TABLE `teams` (
 -- ----------------------------
 DROP TABLE IF EXISTS `fixtures_results`;
 CREATE TABLE `fixtures_results` (
-	`fixture_id` int unsigned NOT NULL AUTO_INCREMENT,
+	--`fixture_id` int unsigned NOT NULL AUTO_INCREMENT,
 	`phase` varchar(10), 
 	`group` int(5),
-	`datetime` datetime,
-	`team_a` int(8) NOT NULL,
-	`team_b` int(8) NOT NULL,
+	`datetime` datetime NOT NULL,
+	`team_a` varchar(50) NOT NULL,
+	`team_b` varchar(50) NOT NULL,
 	`team_a_score` smallint, 
 	`team_b_score` smallint,
 	PRIMARY KEY (`fixture_id`)
